@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurt Lacuna | Video Editing Portfolio</title>
+    <meta name="description" content="Portfolio of Kurt Justin Lacuna, a freelance video editor specializing in storytelling, YouTube content, and social media videos.">
+
+    <!-- Google Font: Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/png" href="assets/images/Final Port Logo.gif">
+</head>
+<body>
+
+    <!-- ============================= -->
+    <!-- NAVIGATION SECTION -->
+    <!-- ============================= -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Primary navigation">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/icons/WHITE 2.png" alt="KL Logo" class="nav-logo-img">
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#demo-reel" class="nav-link">Demo Reel</a></li>
+                <li><a href="#featured-works" class="nav-link">Featured Works</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#software" class="nav-link">Software</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============================= -->
+        <!-- HERO SECTION (BRANDING) -->
+        <!-- ============================= -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+
+                <!-- Placeholder animated GIF logo -->
+                <div class="hero-logo-wrapper">
+                    <img src="assets/images/Portfolio GIF.gif" alt="Kurt Justin Lacuna animated logo" class="hero-logo-gif">
+                </div>
+
+                <a>Explore My Work</a>
+            </div>
+
+            <a href="#demo-reel" class="scroll-indicator" aria-label="Scroll to Demo Reel">
+                <span class="scroll-arrow">&#8595;</span>
+            </a>
+        </section>
+
+        <!-- ============================= -->
+        <!-- DEMO REEL SECTION -->
+        <!-- ============================= -->
+        <section id="demo-reel" class="demo-reel-section">
+            <h2 class="section-title">Demo Reel</h2>
+
+            <!-- Placeholder for embedded demo reel video -->
+            <div class="demo-reel-video-wrapper">
+                <video class="demo-reel-video" controls poster="assets/images/demo-reel-poster-placeholder.jpg">
+                    <source src="assets/images/demo-reel-placeholder.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <p class="demo-reel-description">
+                A collection of my best editing work across gaming,
+                storytelling, educational, and short-form content.
+            </p>
+        </section>
+
+        <!-- ============================= -->
+<!-- FEATURED WORKS SECTION -->
+<!-- ============================= -->
+<section id="featured-works" class="featured-works-section">
+    <h2 class="section-title">Featured Works</h2>
+
+    <!--
+        HOW TO ADD A NEW PROJECT:
+        1. Duplicate one entire <article class="work-card">...</article> block below.
+        2. Update only these 4 things inside your new card:
+           - data-youtube="VIDEO_ID_OR_FULL_URL"  (accepts a full YouTube URL or just the video ID)
+           - .work-title text
+           - .software-icons  → swap/add <img> tags for the software used on this project
+           - .work-category text
+        3. Leave everything else exactly as-is — the thumbnail image, click behavior,
+           and grid layout are all handled automatically.
+        No CSS or JavaScript edits are needed, no matter how many cards or icons you add.
+    -->
+
+    <div class="works-grid">
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="https://youtu.be/4Hj5_-ywFjI?si=EQQfLTtBbrWY5p9U" tabindex="0" role="link" aria-label="Watch The Dark System: Bots, AI, and Forced Losses Exposed! on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">The Dark System: Bots, AI, and Forced Losses Exposed!</h3>
+            <div class="software-icons">
+                <img src="assets/icons/PR.svg" alt="Adobe Premiere Pro" class="software-icon-small">
+            </div>
+            <p class="work-category">Gaming</p>
+        </article>
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="https://youtu.be/VxsJfGX_hsI?si=pCCRpesuBwUsewNF" tabindex="0" role="link" aria-label="Watch Stop Losing Your Solo Carry Games! on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">Stop Losing Your Solo Carry Games!</h3>
+            <div class="software-icons">
+                <img src="assets/icons/CC.svg" alt="Adobe Premiere Pro" class="software-icon-small">
+            </div>
+            <p class="work-category">Gaming</p>
+        </article>
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="https://youtu.be/dQw4w9WgXcQ" tabindex="0" role="link" aria-label="Watch XDeal Cinematic Montage on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">XDeal Cinematic Montage</h3>
+            <div class="software-icons">
+                <img src="assets/icons/software-placeholder.png" alt="Adobe Premiere Pro" class="software-icon-small">
+            </div>
+            <p class="work-category">Photo &amp; Video Edit</p>
+        </article>
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="dQw4w9WgXcQ" tabindex="0" role="link" aria-label="Watch XDeal Short/Reel on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">XDeal Short/Reel</h3>
+            <div class="software-icons">
+                <img src="assets/icons/software-placeholder.png" alt="CapCut" class="software-icon-small">
+            </div>
+            <p class="work-category">Motion Edit</p>
+        </article>
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="dQw4w9WgXcQ" tabindex="0" role="link" aria-label="Watch Antikythera Mechanism Documentary on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">Antikythera Mechanism Documentary</h3>
+            <div class="software-icons">
+                <img src="assets/icons/software-placeholder.png" alt="DaVinci Resolve" class="software-icon-small">
+            </div>
+            <p class="work-category">Documentary</p>
+        </article>
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="dQw4w9WgXcQ" tabindex="0" role="link" aria-label="Watch Creative Video Introduction on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">Creative Video Introduction</h3>
+            <div class="software-icons">
+                <img src="assets/icons/software-placeholder.png" alt="Adobe Premiere Pro" class="software-icon-small">
+                <img src="assets/icons/software-placeholder.png" alt="Adobe After Effects" class="software-icon-small">
+                <img src="assets/icons/software-placeholder.png" alt="Adobe Illustrator" class="software-icon-small">
+            </div>
+            <p class="work-category">Creative Edit</p>
+        </article>
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="dQw4w9WgXcQ" tabindex="0" role="link" aria-label="Watch Labyu Letter 2023 on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">Labyu Letter 2023</h3>
+            <div class="software-icons">
+                <img src="assets/icons/software-placeholder.png" alt="Adobe Premiere Pro" class="software-icon-small">
+            </div>
+            <p class="work-category">Short-film</p>
+        </article>
+
+        <!-- ====================================== -->
+        <!-- Duplicate this card to add a new project -->
+        <!-- ====================================== -->
+        <article class="work-card" data-youtube="dQw4w9WgXcQ" tabindex="0" role="link" aria-label="Watch Letran SHS 2023 Promotional Video on YouTube">
+            <div class="work-thumbnail-wrapper">
+                <img src="" alt="" class="work-thumbnail" loading="lazy">
+                <span class="work-play-icon">&#9658;</span>
+            </div>
+            <h3 class="work-title">Letran SHS 2023 Promotional Video</h3>
+            <div class="software-icons">
+                <img src="assets/icons/software-placeholder.png" alt="Adobe Premiere Pro" class="software-icon-small">
+            </div>
+            <p class="work-category">Promo Video</p>
+        </article>
+
+    </div>
+</section>
+
+        <!-- ============================= -->
+        <!-- ABOUT ME SECTION -->
+        <!-- ============================= -->
+        <section id="about" class="about-section">
+            <div class="about-image-wrapper">
+                <!-- Placeholder portrait image -->
+                <img src="assets/images/KJL-3.jpg" alt="Portrait of Kurt Justin Lacuna" class="about-image">
+            </div>
+
+            <div class="about-content">
+                <p class="about-eyebrow">About Me</p>
+                <h2 class="about-name">Kurt Justin Lacuna</h2>
+                <p class="about-bio">
+                    Hi, I'm Kurt, a freelance video editor specializing in
+                    storytelling, YouTube content, and social media videos.
+                    Since 2022, I've worked with creators and clients across
+                    different industries, delivering edits that combine
+                    creativity, strong pacing, and attention to detail.
+                </p>
+
+                <ul class="about-highlights">
+                    <li class="about-highlight-item">
+                        <span class="highlight-icon" aria-hidden="true">&#128205;</span>
+                        Based in the Philippines
+                    </li>
+                    <li class="about-highlight-item">
+                        <span class="highlight-icon" aria-hidden="true">&#127909;</span>
+                        3+ Years of Editing Experience
+                    </li>
+                    <li class="about-highlight-item">
+                        <span class="highlight-icon" aria-hidden="true">&#127918;</span>
+                        Current Video Editor for Zex (MLBB Creator)
+                    </li>
+                    <li class="about-highlight-item">
+                        <span class="highlight-icon" aria-hidden="true">&#128248;</span>
+                        Former Photographer
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- SERVICES SECTION -->
+        <!-- ============================= -->
+        <section id="services" class="services-section">
+            <h2 class="section-title">Services</h2>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <span class="service-icon" aria-hidden="true">&#127916;</span>
+                    <h3 class="service-title">Long-Form Videos</h3>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon" aria-hidden="true">&#127918;</span>
+                    <h3 class="service-title">Gaming Videos</h3>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon" aria-hidden="true">&#128100;</span>
+                    <h3 class="service-title">Talking Heads</h3>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon" aria-hidden="true">&#128249;</span>
+                    <h3 class="service-title">Reels / Shorts</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- SOFTWARE SECTION -->
+        <!-- ============================= -->
+        <section id="software" class="software-section">
+            <h2 class="section-title">Softwares</h2>
+
+            <div class="software-grid">
+
+                <div class="software-item">
+                    <img src="assets/icons/PR.svg" alt="Adobe Premiere Pro icon" class="software-icon">
+                    <p class="software-name">Adobe Premiere Pro</p>
+                </div>
+
+                <div class="software-item">
+                    <img src="assets/icons/DR.svg" alt="DaVinci Resolve Studio icon" class="software-icon">
+                    <p class="software-name">DaVinci Resolve Studio</p>
+                </div>
+
+                <div class="software-item">
+                    <img src="assets/icons/CC.svg" alt="Capcut Pro icon" class="software-icon">
+                    <p class="software-name">Capcut Pro</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- CONTACT SECTION -->
+        <!-- ============================= -->
+<section id="contact" class="contact-section">
+    <div class="contact-grid">
+
+        <!-- LEFT COLUMN: heading, subtitle, contact info -->
+        <div class="contact-info-column">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-subtitle">Interested in working together?</p>
+
+            <ul class="contact-list">
+    <li class="contact-item">
+        <img src="assets/icons/EMAIL.svg" alt="Email" class="contact-icon-img">
+        <a href="https://forms.gle/9RhpibQzKsHvhhyS9" class="contact-link" target="_blank" rel="noopener noreferrer">Work With Me</a>
+    </li>
+    <li class="contact-item">
+        <img src="assets/icons/FB.svg" alt="Facebook" class="contact-icon-img">
+        <a href="https://www.facebook.com/KreozYT/" class="contact-link" target="_blank" rel="noopener noreferrer">Kurt Justin Lacuna</a>
+    </li>
+    <li class="contact-item">
+        <img src="assets/icons/DC.svg" alt="Discord" class="contact-icon-img">
+        <a href="https://discordapp.com/users/731114046039916585" class="contact-link" target="_blank" rel="noopener noreferrer">Kreozzz#4437</a>
+    </li>
+    <li class="contact-item">
+        <img src="assets/icons/IG.svg" alt="Instagram" class="contact-icon-img">
+        <a href="https://www.instagram.com/kurt_kreoz/" class="contact-link" target="_blank" rel="noopener noreferrer">@kurt_kreoz</a>
+    </li>
+</ul>
+        </div>
+
+        <!-- RIGHT COLUMN: branding logo -->
+        <div class="contact-branding-column">
+            <img src="assets/icons/WHITE BANNER 2.png" alt="Kurt Lacuna branding logo" class="contact-branding-logo">
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <!-- ============================= -->
+    <!-- FOOTER SECTION -->
+    <!-- ============================= -->
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <p class="footer-logo-text">Kurt Lacuna</p>
+        </div>
+        <p class="footer-copyright">By Kurt Justin Lacuna &copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
