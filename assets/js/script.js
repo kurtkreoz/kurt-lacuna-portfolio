@@ -2,7 +2,8 @@
    PORTFOLIO SCRIPT.JS
    Kurt Justin Lacuna — Vanilla JavaScript Enhancements
    Sections: Smooth Scroll | Mobile Nav | Active Nav |
-             Fade-In Animations | Featured Works | Scroll-to-Top
+             Fade-In Animations | Featured Works | Scroll-to-Top |
+             Demo Reel Autoplay
    ============================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -464,5 +465,45 @@ document.addEventListener('DOMContentLoaded', () => {
     measureSectionBoundaries();
     toggleScrollToTopVisibility();
     updateActiveNavOnScroll();
+
+
+    /* =========================================================
+       7. DEMO REEL — AUTOPLAY/PAUSE ON SCROLL INTO VIEW
+       Plays the Demo Reel video automatically once the section
+       is meaningfully in view, and pauses it when scrolled out
+       of view. Resumes from the same timestamp on return instead
+       of restarting, since .pause()/.play() never reset
+       currentTime. Uses Intersection Observer only — no scroll
+       event listener — for performance. Fully independent of the
+       Featured Works YouTube cards, which are unaffected.
+       ========================================================= */
+    const demoReelVideo = document.querySelector('.demo-reel-video');
+
+    if (demoReelVideo) {
+        /* Ensure the video does not autoplay on page load; playback
+           is driven entirely by visibility from here on. */
+        demoReelVideo.pause();
+
+        const demoReelObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    /* .play() resumes from current playback position;
+                       it does not restart the video. */
+                    demoReelVideo.play().catch(() => {
+                        /* Silently ignore browsers that block autoplay
+                           until the user interacts with the page. */
+                    });
+                } else {
+                    demoReelVideo.pause();
+                }
+            });
+        }, {
+            root: null,
+            /* Fires once roughly 50-60% of the section is visible */
+            threshold: 0.55
+        });
+
+        demoReelObserver.observe(document.querySelector('.demo-reel-section'));
+    }
 
 });
